@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Teste Frontend VAGAS.com</title>
+    <title>Teste Frontend VAGAS.com - Isabella Cacélia Vicente</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
@@ -17,15 +17,15 @@
 
       <div class="space"></div>
 
-      <form method="index.js">
+      <form id="sectionForm" method="index.js">
         <div class="space"></div>
 
         <fieldset>
           <label>Quais stickers:</label>
           <div class="space"></div>
-          <div><input type="checkbox" /> React</div>
-          <div><input type="checkbox" /> Vue</div>
-          <div><input type="checkbox" /> Angular</div>
+          <label><input type="checkbox" /> React</label> <br />
+          <label><input type="checkbox" /> Vue</label><br />
+          <label><input type="checkbox" /> Angular</label>
         </fieldset>
 
         <div class="space-md"></div>
@@ -70,7 +70,11 @@
         <div class="space-md"></div>
 
         <footer>
-          <button aria-label="Enviar" onclick="validaFormulario()">
+          <button
+            aria-label="Enviar"
+            class="disabled"
+            onclick="validaFormulario()"
+          >
             Enviar
           </button>
         </footer>
@@ -78,5 +82,6 @@
     </div>
 
     <script src="js/index.js"></script>
+    <script src="js/checkbox.js"></script>
   </body>
 </html>

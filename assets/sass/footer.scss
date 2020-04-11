@@ -1,0 +1,31 @@
+footer {
+  padding: 32px;
+  background: #dde3e9;
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    background: #2f3676;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px 32px;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+      background: #191847;
+    }
+  }
+
+  .disabled {
+    background: #c5cfd6;
+    color: #555555;
+    &:focus,
+    &:hover {
+      background: #c5cfd6;
+    }
+  }
+}

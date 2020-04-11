@@ -1,8 +1,9 @@
 const init = () => {
   let countMais = document.getElementById("countMais");
   let countMenos = document.getElementById("countMenos");
-  let campoMsg = document.querySelector("textarea").value;
+  let campoMsg = document.querySelector("textarea");
   let count = document.getElementById("count");
+  let button = document.querySelector("button");
 
   countMais.onclick = function () {
     count.value++;
@@ -14,11 +15,16 @@ const init = () => {
     }
   };
 
-  if (campoMsg == "" && count.value == "") {
-    let btn = document.querySelector("button");
-    btn.classList.add("disabled");
-  }
+  campoMsg.addEventListener("keyup", function () {
+    if (campoMsg.value) {
+      button.classList.remove("disabled");
+    } else {
+      button.classList.add("disabled");
+    }
+  });
 };
+
+init();
 
 const validaFormulario = () => {
   let campoMsg = document.querySelector("textarea").value;
@@ -26,5 +32,3 @@ const validaFormulario = () => {
     alert("Formulário enviado com sucesso!");
   }
 };
-
-init();

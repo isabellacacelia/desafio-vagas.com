@@ -1,0 +1,107 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif; }
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif; } }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: rebeccapurple;
+  color: #071723; }
+
+.box {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  overflow: hidden;
+  width: 550px; }
+  @media (max-width: 500px) {
+    .box {
+      margin: 0;
+      width: 100%;
+      border-radius: 0; } }
+
+.space {
+  margin-bottom: 16px; }
+
+.space-md {
+  margin-bottom: 32px; }
+
+label {
+  font-size: 18px;
+  font-weight: 600; }
+
+header {
+  background: url(../../img/header.png) center right no-repeat;
+  background-size: cover;
+  height: 187px;
+  padding: 23px 36px;
+  width: 100%; }
+  header h1 {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 300; }
+    header h1 span {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 1.46; }
+
+form textarea {
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  border-radius: 8px;
+  color: #071723;
+  height: 140px;
+  padding: 16px;
+  resize: none;
+  width: 100%;
+  font-size: 14px; }
+form fieldset {
+  padding: 0 32px;
+  border: none; }
+form .counter input {
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 8px;
+  height: 42px;
+  width: 60px;
+  vertical-align: top; }
+form .counter svg {
+  fill: #2f3676;
+  cursor: pointer; }
+  form .counter svg:hover {
+    fill: #191847; }
+
+footer {
+  padding: 32px;
+  background: #dde3e9;
+  display: flex;
+  justify-content: flex-end; }
+  footer button {
+    background: #2f3676;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px 32px;
+    cursor: pointer; }
+    footer button:focus, footer button:hover {
+      background: #191847; }
+  footer .disabled {
+    background: #c5cfd6;
+    color: #555555; }
+    footer .disabled:focus, footer .disabled:hover {
+      background: #c5cfd6; }
+
+/*# sourceMappingURL=style.css.map */
